@@ -1,0 +1,37 @@
+name: chap-2-challenge
+on: push
+# 4 jobs that print the date
+jobs:
+  job1:
+    name: Unbunto
+    runs-on: unbunto-latest 
+    steps:
+      - name: step one
+        uses: actions/checkout@v4
+      - name: step two
+        run: date
+  job2:
+    name: Windows
+    runs-on: windows-latest
+    steps:
+      - name: step one
+        uses: actions/checkout@v4
+      - name: step two
+        run: getdate
+  job3: 
+      name: macOS
+      runs-on: macos-latest
+      steps:
+        - name: step one
+          uses: actions/checkout@v4
+        - name: step two
+          run: date
+  job4:
+    name: Unbunto-dependant
+    needs: [job1, job2, job3]
+    runs-on: unbunto-latest
+    steps:
+      - name: step one
+        uses: actions/checkout@v4
+      - name: step two
+        uses: date
