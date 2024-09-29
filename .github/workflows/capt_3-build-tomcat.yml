@@ -9,7 +9,7 @@ jobs:
 
     steps:
     - name: Check out tomcat-users.xml
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: List project files and java version
       run: |
@@ -18,7 +18,7 @@ jobs:
           java -version
 
     - name: Check out Apache Tomcat
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
       with:
         repository: jalbe0076/learning-github-actions # Repository name with owner
         ref: main               # The branch, tag or SHA to checkout
