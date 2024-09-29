@@ -3,8 +3,8 @@ on: push
 # 4 jobs that print the date
 jobs:
   job1:
-    name: Unbunto
-    runs-on: unbunto-latest 
+    name: Ubuntu
+    runs-on: ubuntu-latest 
     steps:
       - name: step two
         run: date
@@ -21,9 +21,9 @@ jobs:
         - name: step two
           run: date
   job4:
-    name: Unbunto-dependant
+    name: Ubuntu-dependant
     needs: [job1, job2, job3]
-    runs-on: unbunto-latest
+    runs-on: ubuntu-latest
     steps:
       - name: step two
         run: date
