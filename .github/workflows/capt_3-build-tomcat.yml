@@ -40,8 +40,9 @@ jobs:
 
     - name: Copy tomcat-users.xml into Tomcat configuration directory
       run: |
-          mkdir -p ./Ch03/03_03/tomcat/conf
           cp -v ./Ch03/03_03/tomcat-users.xml ./Ch03/03_03/tomcat/conf/tomcat-users.xml
+          ls -ltr ./Ch03
+          ls -ltr ./Ch03/03_03/tomcat
 
     - name: Compile Tomcat
       run: |
