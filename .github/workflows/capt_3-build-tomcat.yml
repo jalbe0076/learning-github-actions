@@ -13,11 +13,8 @@ jobs:
 
     - name: List project files and java version
       run: |
-          echo "Listing all files in the repository..."
           ls -ltr
-          echo "Listing contents of Ch03..."
           ls -ltr ./Ch03
-          echo "Listing contents of Ch03/03_03..."
           ls -ltr ./Ch03/03_03
 
     - name: Check out Apache Tomcat
@@ -48,5 +45,5 @@ jobs:
 
     - name: Compile Tomcat
       run: |
-        cd ./tomcat
+        cd ./Ch03/03_03/tomcat
         ant
