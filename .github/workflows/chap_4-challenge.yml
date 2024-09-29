@@ -3,7 +3,7 @@ name: Chapter 4 challenge
 on: push
 
 jobs:
-  lint:
+  test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -11,11 +11,11 @@ jobs:
       - run: python ./Ch04/hello.py
 
   build:
-    needs: [lint]
+    needs: [test]
     runs-on: ubuntu-latst
     steps:
       - uses: actions/checkout@v4
       - uses: actions/upload-artifact@v4
         with: 
           name: myArtifact
-          path: ./Ch04
+          path: .
