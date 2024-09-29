@@ -1,0 +1,19 @@
+name: Chapter 3 challenge - Create an Artifact
+
+on: push
+
+env: 
+  ARTIFACT_NAME: 'my-artifact'
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with: 
+          name: ${{ env.ARTIFACT_NAME }}
+          path: ./Ch03/03_06
