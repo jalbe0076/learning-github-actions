@@ -1,6 +1,6 @@
 name: first
 
-on: push
+on: push # You can add conditions to run on specific branches or exclude branches etc. 
 
 jobs:
   job1:
@@ -13,6 +13,7 @@ jobs:
         run: env | sort
 
   job2: 
+    needs: job1 # this adds a dependency to job 2, in this case job1 needs to finish successfully beofre job 2 can run (needs: [job1, job4] <this is the syntax adding more than one dependancy>)
     name: Second job
     runs-on: windows-latest
     steps: 
