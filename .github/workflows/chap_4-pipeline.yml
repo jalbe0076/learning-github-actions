@@ -1,0 +1,23 @@
+name: Pipeline
+
+on: push
+
+env:
+  APP: my-cool-app
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Python environment
+        uses: actions/setup-python@v5.2.0
+
+      - name: Install Requirements
+        run: pip install --quiet --requirements ./Ch04/04_02/requirements.txt
+
+      - name: Lint Code
+        run: |
+            python -m unittest --verbose --failfast
