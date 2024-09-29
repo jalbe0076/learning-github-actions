@@ -34,6 +34,7 @@ jobs:
     - name: List project files and java version
       run: |
           ls -ltr
+          ls -ltr ./Ch03
           ls -ltr ./Ch03/03_03
           java -version
 
