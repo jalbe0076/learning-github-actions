@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Step one
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4 # Used to check out (download) the repository's code to the runner, which is the machine where the GitHub Actions workflow is being executed. By default, it checks out the repository at the commit that triggered the workflow, making the code available locally in the workflow environment. This is necessary if your workflow needs to run scripts, build, or test against the repository's code.
       - name: Step two
         run: env | sort
 
