@@ -20,7 +20,7 @@ jobs:
 
       - name: Lint Code
         run: |
-          flake8 --ignore=E501, E231 ./Ch04/04_02/*.py
+          flake8 --ignore=E501,E231 ./Ch04/04_02/*.py
           pylint --disable=C0301 --disable=C0326 ./Ch04/04_02/*.py
         # E501: Line too long (>79 characters).
         # E231: Missing whitespace after a comma or colon.
