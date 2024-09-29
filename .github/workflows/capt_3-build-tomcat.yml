@@ -20,8 +20,8 @@ jobs:
     - name: Check out Apache Tomcat
       uses: actions/checkout@v4
       with:
-        repository: apache/tomcat # Repository name with owner
-        ref: main # The branch, tag or SHA to checkout
+        repository: automate6500/tomcat # Repository name with owner
+        ref: master # The branch, tag or SHA to checkout
         path: ./tomcat  # Relative path under $GITHUB_WORKSPACE
 
     - name: Setup Java 9
