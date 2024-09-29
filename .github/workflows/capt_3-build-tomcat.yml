@@ -47,5 +47,5 @@ jobs:
 
     - name: Compile Tomcat
       run: |
-        cd ./Ch03/03_03/tomcat
+        cd ./tomcat
         ant
