@@ -16,7 +16,7 @@ jobs:
         uses: actions/setup-python@v5.2.0
 
       - name: Install Requirements
-        run: pip install --quiet --requirements ./Ch04/04_02/requirements.txt
+        run: pip install --quiet --requirement ./Ch04/04_02/requirements.txt
 
       - name: Lint Code
         run: |
