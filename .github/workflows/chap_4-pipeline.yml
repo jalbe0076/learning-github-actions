@@ -20,4 +20,9 @@ jobs:
 
       - name: Lint Code
         run: |
+          flake8 --ignore=E501, E231 *.py
+          pylint --disable=C0301 --disable=C0326 *.py
+
+      - name: Run unit tests
+        run: |
             python -m unittest --verbose --failfast
