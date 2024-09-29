@@ -1,0 +1,21 @@
+name: Chapter 4 challenge
+
+on: push
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - run: python ./Ch04/hello.py
+
+  build:
+    needs: [lint]
+    runs-on: ubuntu-latst
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/upload-artifact@v4
+        with: 
+          name: myArtifact
+          path: ./Ch04
