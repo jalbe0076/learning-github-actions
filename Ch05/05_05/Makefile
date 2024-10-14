@@ -8,3 +8,5 @@ build:
 
 test:
 	./entrypoint.sh $(KEYWORD)
+
+# make -C Ch05/05_05 (use this command to run Makefile from the Ch05/05_05 directory)

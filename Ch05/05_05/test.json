@@ -1,0 +1,64 @@
+{
+  "SolaceTooltip": {
+    "Instances": [
+      {
+        "importInfo": {
+          "imported": "SolaceTooltip",
+          "moduleName": "@SolaceDev/mass-react-components"
+        },
+        "props": {
+
+        },
+        "propsSpread": false,
+        "location": {
+          "file": "/user/sdfa/fdsa/lkj/gh/micro-frontends/ep/sc/App.tsx"
+        }
+        
+      },{
+        "importInfo": {
+          "imported": "SolaceTooltip",
+          "moduleName": "@SolaceDev/ass-react-components"
+        },
+        "props": {
+
+        },
+        "propsSpread": false,
+        "location": {
+          "file": "/user/sdfa/fdsa/lkj/gh/micro-frontends/ep/sc/App2.tsx"
+        }
+        
+      }
+    ]
+  },
+  "SolaceButton": {
+    "Instances": [
+      {
+        "importInfo": {
+          "imported": "Solacebutton",
+          "moduleName": "@SolaceDev/mass-react-components"
+        },
+        "props": {
+
+        },
+        "propsSpread": false,
+        "location": {
+          "file": "/user/sdfa/fdsa/lkj/gh/micro-frontends/ep/sc/App.tsx"
+        }
+        
+      },{
+        "importInfo": {
+          "imported": "Solacebutton",
+          "moduleName": "@SolaceDev/mass-react-components"
+        },
+        "props": {
+
+        },
+        "propsSpread": false,
+        "location": {
+          "file": "/user/sdfa/fdsa/lkj/gh/micro-frontends/ep/sc/App2.tsx"
+        }
+        
+      }
+    ]
+  },
+}
